@@ -75,7 +75,11 @@ client.on('message', async (message) => {
         .setDescription(`**${message.author.tag}** adlı kişi, **${level + 1}** level oldu!`)
         .setColor(message.guild.me.roles.highest.color || "RANDOM");
       
-      client.channels.cache.get(channelid).send(xpresponse);
+      client.channels.cache.get(channelid).send(xpresponse).catch(() => {
+        message.author.send(xpresponse).catch(() => {
+          log("Level mesajları için kanal ayarlanmadığı için gönderilemedi!");
+        });
+      });
     };
   };
 });
