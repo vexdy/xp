@@ -20,8 +20,7 @@ Your bot should work perfectly right now.
 
 ## Extra
 ### For questions:
- - You can add me on **vexdy#3576**. 
- - If I dont add you on discord, try catching me on **v3xdy@protonmail.com**.
+ - Use ISSUES tab.
 
 ### License
 ```
